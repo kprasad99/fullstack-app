@@ -6,10 +6,13 @@ spring:
     show-sql: true
 # Need to enalbe SSL else HTTP2 would not work
 server:
+  port: 8443
   http2:
-    enabled: true
+    enabled: false
   servlet:
     context-path: /api
-#  ssl:
-#    key-store: classpath:keystore.store
-#    key-store-password: secret
+  ssl:
+    key-store: classpath:jks/keystore.p12
+    key-store-password: secret
+    key-alias: tomcat
+    key-store-type: PKCS12

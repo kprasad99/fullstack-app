@@ -16,7 +16,7 @@
             "outputPath": "dist/fullstack-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/ui/",
+            "baseHref": "ui",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
