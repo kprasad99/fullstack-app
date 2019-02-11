@@ -26,7 +26,7 @@
               In</button>
           </div>
           <div class="container" style="height: 25px; margin: 12px" fxLayout="row" fxLayoutAlign="center center">
-            <mat-icon *ngIf="isInProgress" mat-font-icon="fa-icon" class="fa fa-spinner fa-spin fa-2x"></mat-icon>
+            <i *ngIf="isInProgress" class="fa fa-spinner fa-spin fa-2x"></i>
             <mat-error *ngIf="loginForm.hasError('loginFailed')">
               <strong>login Failed!!</strong>
             </mat-error>
